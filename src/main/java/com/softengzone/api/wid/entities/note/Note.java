@@ -1,4 +1,4 @@
-package com.softengzone.api.wid.entity;
+package com.softengzone.api.wid.entities.note;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

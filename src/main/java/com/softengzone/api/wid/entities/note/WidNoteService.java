@@ -1,4 +1,4 @@
-package com.softengzone.api.wid.service;
+package com.softengzone.api.wid.entities.note;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.softengzone.api.wid.entity.Note;
 import com.softengzone.api.wid.exception.ObjectNotFoundException;
-import com.softengzone.api.wid.repository.NoteRepository;
 
 @Service
 public class WidNoteService implements NoteService {
@@ -54,7 +52,6 @@ public class WidNoteService implements NoteService {
 		return noteRepository.findAllByKeyword(keyword);
 	}
 	
-	@Override
 	public void loadSampleData() {
 		noteRepository.save(new Note("Oracle PL/SQL", "Databases", "Int questions"));
 		noteRepository.save(new Note("Spring HETEOS", "Spring Core 4.3", "It containst details about Spring HETEOS package"));
@@ -63,5 +60,7 @@ public class WidNoteService implements NoteService {
 		noteRepository.save(new Note("Spring", "Spring - Solutions to common problems", "Spring examples"));
 		noteRepository.save(new Note("Web Development", "Web development frameworks", "Struts 2, Scala, AngularJS, Angular, Spring"));
 	}
+
+	
 	
 }

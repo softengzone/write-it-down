@@ -1,11 +1,9 @@
-package com.softengzone.api.wid.repository;
+package com.softengzone.api.wid.entities.note;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
-import com.softengzone.api.wid.entity.Note;
 
 public interface NoteRepository extends JpaRepository<Note, Long> {
 

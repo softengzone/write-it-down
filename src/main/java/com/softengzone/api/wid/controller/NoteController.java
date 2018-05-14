@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.softengzone.api.wid.entity.Note;
+import com.softengzone.api.wid.entities.note.Note;
+import com.softengzone.api.wid.entities.note.NoteService;
 import com.softengzone.api.wid.exception.ObjectNotFoundException;
-import com.softengzone.api.wid.service.NoteService;
 
 @RestController
 @RequestMapping(value="/", produces="application/json")
@@ -62,7 +62,7 @@ public class NoteController {
 	
 	@PostMapping(value="/notes/load")
 	public void loadSampleData() {
-		noteService.loadSampleData();
+//		noteService.loadSampleData();
 	}
 	
 }

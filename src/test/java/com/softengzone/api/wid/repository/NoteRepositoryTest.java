@@ -14,7 +14,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.softengzone.api.wid.entity.Note;
+import com.softengzone.api.wid.entities.note.Note;
+import com.softengzone.api.wid.entities.note.NoteRepository;
 import com.softengzone.api.wid.exception.ObjectNotFoundException;
 
 @RunWith(SpringRunner.class)
